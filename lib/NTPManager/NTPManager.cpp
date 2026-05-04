@@ -46,3 +46,6 @@ String getTimestamp()
 {
   return timeZone.dateTime("YmdHis");
 }
+String getFormattedTime() {
+    return timeZone.dateTime("H:i d/m/Y");
+}

@@ -8,5 +8,7 @@ void setupNTP();
 // Function to loop NTP
 void loopNTP();
 
-// Function to get the Timestamp to write it in the JSON
+// Functions to get the Timestamp to write it in the JSON or to display it on the screen
 String getTimestamp();
+
+String getFormattedTime();
