@@ -10,6 +10,9 @@ void setupMQTT();
 // Init MQTT connection
 void mqttConnect();
 
+// Loop MQTT connection
+void loopMQTT();
+
 // Publish data to MQTT broker on a topic
 void mqttPublish(const char* topic, const String &payload);
 
