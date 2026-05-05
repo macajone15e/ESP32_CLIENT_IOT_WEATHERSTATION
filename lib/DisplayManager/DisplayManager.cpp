@@ -23,7 +23,7 @@ void setupMonitor() {
     display.clearDisplay();
 }
 
-void displayData(String date, float temperature, float humidity, float altitude, bool carbonMonoxide) {
+void displayData(String date, float temperature, float pressure, float altitude, bool carbonMonoxide) {
 
     display.clearDisplay();
     display.setTextSize(1);
@@ -38,9 +38,9 @@ void displayData(String date, float temperature, float humidity, float altitude,
     display.println(" C");
         
     display.setCursor(0,30);
-    display.print("Humidity : ");
-    display.print(humidity, 1);
-    display.println(" %");
+    display.print("Pressure : ");
+    display.print(pressure, 1);
+    display.println(" hPa");
 
     display.setCursor(0,40);
     display.print("Altitude : ");
