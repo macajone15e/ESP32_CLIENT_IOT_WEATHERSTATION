@@ -4,12 +4,18 @@
 extern const int SDA_PIN;
 extern const int SCL_PIN;
 
+void setupI2C() {
+  Wire.begin(SDA_PIN, SCL_PIN);
+  if(DebugMode) {
+    scanI2C();
+  }
+}
+
 void scanI2C() {
   byte error, address;
   int nDevices;
 
   Serial.println("Scanning I2C bus...");
-  Wire.begin(SDA_PIN, SCL_PIN);
 
   nDevices = 0;
   for (address = 1; address < 127; address++) {

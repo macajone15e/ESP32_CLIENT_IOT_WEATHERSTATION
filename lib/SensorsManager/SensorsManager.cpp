@@ -2,12 +2,8 @@
 #include <SensorsManager.hpp>
 #include <BMP280Controller.hpp>
 #include "../../include/config.hpp"
-#include <I2CScanner.hpp>
 
 void setupSensors() {
-  if(DebugMode) {
-    scanI2C();
-  }
   setupBMP280();
 }
 
